@@ -1,0 +1,60 @@
+body{
+    height: 100vh;
+}
+.contenedor{
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group{
+    width: 50%;
+    height: fit-content;
+    padding: 2em;
+    box-shadow: 5px 10px 20px -4px rgba(0,0,0,0.76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drag-area{
+    width: 80%;
+    border: 1px dashed gray;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .drag-area.active{
+    border: 2px solid blue;
+  }
+  .drag-area .img{
+    margin: auto;
+    object-fit: cover;
+  }
+  .drag-area p{
+    font-size: 20px;
+    color: gray;
+  }
+  .drag-area span{
+    font-size: 20px;
+    color: gray;
+    margin: 10px 0 15px 0;
+  }
+  button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #0978E7;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
