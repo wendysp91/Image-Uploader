@@ -1,4 +1,6 @@
 body{
+    font-family: 'Poppins', sans-serif;
+    color: #4F4F4F;
     height: 100vh;
 }
 .contenedor{
@@ -19,8 +21,14 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 2em;
+}
 .drag-area{
     width: 80%;
+    background: #F6F8FB;
     border: 1px dashed gray;
     margin-bottom: 2em;
     border-radius: 5px;
@@ -38,12 +46,10 @@ body{
     object-fit: cover;
   }
   .drag-area p{
-    font-size: 20px;
-    color: gray;
+    font-size: 12px;
   }
   .drag-area span{
-    font-size: 20px;
-    color: gray;
+    font-size: 12px;
     margin: 10px 0 15px 0;
   }
   button{
