@@ -17,7 +17,7 @@
     <div class="contenedor">
         <div class="input-group">
             <h2>Upload your image</h2>
-            <div class="drag-area">
+            <div class="drag-area" id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
                 <div class="img"><img src="img/image.svg"></div>
                 <p>Drag and drop your image here</p>
                 <span>OR</span>

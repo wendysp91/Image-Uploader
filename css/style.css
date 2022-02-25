@@ -63,4 +63,10 @@ h2{
     border-radius: 5px;
     cursor: pointer;
   }
+  .image{
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      
+  }
   
