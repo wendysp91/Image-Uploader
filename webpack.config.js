@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -7,6 +8,13 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'var',
-        library: 'main'
+        library: 'main',
+        clean: true,
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Image Uploader',
+            template: 'src/index.html'
+        }),
+    ],
 };
