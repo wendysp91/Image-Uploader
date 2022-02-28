@@ -1,5 +1,7 @@
 import { config } from "./config";
-import { upload } from "./upload"
+import { upload } from "./upload";
+import css from "./style.css";
+
 
 config();
 
