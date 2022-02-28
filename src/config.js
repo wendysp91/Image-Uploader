@@ -16,12 +16,14 @@ export function config() {
         storageBucket: "image-uploader-202202.appspot.com",
         messagingSenderId: "365805087202",
         appId: "1:365805087202:web:16963521bc32bdc399b1bb",
-        measurementId: "G-396LST67KQ"
+        measurementId: "G-396LST67KQ",
+        storageBucket: 'gs://image-uploader-202202.appspot.com'
     };
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     const db = getFirestore(app);
+
 }
 // export default config;

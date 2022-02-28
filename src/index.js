@@ -1,4 +1,5 @@
 import { config } from "./config";
+import { upload } from "./upload"
 
 config();
 
@@ -32,6 +33,7 @@ function showFile() {
             dropArea.innerHTML = imgTag;
         }
         fileReader.readAsDataURL(file);
+        upload(file);
     } else {
         alert("This is not an Image File!");
         dropArea.classList.remove("active");
